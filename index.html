@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafe WR</title>  
+</head>
+<body>
+    <header id="nav">
+        <div class="nav-logo">
+            Cafe <span>WR</span>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+            <li>
+                <a href="#review">Review</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="nav-items">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <div class="menu-icon" onclick="navbtnfunc(this)">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-bg">
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="about-title">ABOUT <span class="ps-3">US</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 m-0 p-0">
+                    <img src="images/about.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-lg-6 about-content">
+                    <h5 class="about-subtitle">What Makes Our Coffee Special?</h5>
+                    <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum expedita dolore, enim illum aliquid nesciunt quisquam eaque est quasi maiores quam facilis dolorum. Aut!</p>
+                    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid modi ullam temporibus tempore nulla.</p>
+                    <button class="about-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="menu-title animate__animated animate__fadeInUp">OUR <span class="ps-3">MENU</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-1.png" class="img-fluid" alt="">
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-2.png" class="img-fluid" alt="">
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-3.png" class="img-fluid" alt="">
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-4.png" class="img-fluid p-4" alt="">
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-5.png" class="img-fluid p-5" alt="">
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-box">
+                        <img src="images/menu-6.png" class="img-fluid" alt="">  
+                        <h6 class="menu-box-title">Tasty And Healthy</h6>
+                        <div class="price">$15.99 <span>$19.99</span></div>
+                        <button class="menu-box-btn">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 class="products-title">OUR <span>PRODUCTS</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-1.png" class="img-fluid" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-2.png" class="img-fluid p-4" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-3.png" class="img-fluid p-4" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-4.png" class="img-fluid" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-5.png" class="img-fluid" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="products-box">
+                        <img src="images/product-6.png" class="img-fluid" alt="">
+                        <h6 class="products-box-title">Tasty And Healthy</h6>
+                        <div class="points">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>  
+                        <div class="price">$15.99</div>
+                        <button class="products-box-btn">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <h2 class="review-title">Costumer's <span>Review</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="review-box">
+                        <div class="review-icon">
+                            <i class="fa-sharp fa-solid fa-quote-right"></i>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe distinctio exercitationem ex reprehenderit placeat inventore fugiat perspiciatis in, nam quas nemo consequatur officia soluta ipsam sequi, rem officiis, ab temporibus!</p>
+                        <img src="images/review-1.jpg" alt="" class="review-img img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="review-box">
+                        <div class="review-icon">
+                            <i class="fa-sharp fa-solid fa-quote-right"></i>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe distinctio exercitationem ex reprehenderit placeat inventore fugiat perspiciatis in, nam quas nemo consequatur officia soluta ipsam sequi, rem officiis, ab temporibus!</p>
+                        <img src="images/review-2.jpg" alt="" class="review-img img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="review-box">
+                        <div class="review-icon">
+                            <i class="fa-sharp fa-solid fa-quote-right"></i>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe distinctio exercitationem ex reprehenderit placeat inventore fugiat perspiciatis in, nam quas nemo consequatur officia soluta ipsam sequi, rem officiis, ab temporibus!</p>
+                        <img src="images/review-3.jpg" alt="" class="review-img img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="contact-title">Contact <span>Us</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-0 m-0">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52915.863524714725!2d-87.6891924066013!3d41.81950442610313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sAmerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1677154115116!5m2!1str!2str" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-12 col-lg-6 contact-form">
+                    <h3 class="contact-subtitle">GET IN TOUCH</h3>
+                    <div class="inputbox">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input type="text" name="" id="" placeholder="Name / Surname">
+                    </div>
+                    <div class="inputbox">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" name="" id="" placeholder="Mail">
+                    </div>
+                    <div class="inputbox">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <input type="text" name="" id="" placeholder="Phone">   
+                    </div>
+                    <input type="submit" value="Contact Now">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+            <li>
+                <a href="#review">Review</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="author">Designed By <span>Umut Harun Örs</span></div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

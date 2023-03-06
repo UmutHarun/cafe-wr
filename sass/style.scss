@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+
+$black: #13131a;
+$orange: rgb(219, 160, 89);
+$grey: rgb(51, 51, 51);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    height: 300vh;
+}
+
+header {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo {
+        font-size: 23px;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0 1rem 0 1rem;
+            list-style: none;
+
+            a {
+                font-size: 17px;
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+            }
+
+            a:hover {
+                color: orange;
+            }
+        }
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 23px;
+            margin: 0 .3rem 0 .3rem;
+        }
+    }    
+    
+}
+
+section#home {
+    .home-bg {
+        background-image: url(/images/deneme.svg);
+        background-size: cover;
+        height: 120vh;
+        width: 100vw;
+    }
+}
+
+section#about {
+    min-height: 90vh;
+    background-color: $black;
+
+    .about-title {
+        text-align: center;
+        font-size: 50px;
+        margin: 0 0 5rem 0;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .about-content {
+        background-color: $grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .about-subtitle {
+            color: $orange;
+            font-size: 30px;
+            margin: 1rem;
+        }
+
+        .about-text {
+            padding: .3rem;
+        }
+
+        .about-btn {
+            border: 2px solid $orange;
+            color: $orange;
+            background: none;
+            padding: .6rem 1.2rem .6rem 1.2rem;
+            width: 25%;
+        }
+
+        .about-btn:hover {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+}
+
+section#menu {
+    background-color: $black;
+    height: auto;
+
+    .menu-title {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        margin: 0 0 5rem 0;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .menu-box {
+        text-align: center;
+        background-color: $grey;
+        margin: .7rem 0 .7rem 0;
+
+        img {
+            height: 300px;
+        }
+
+        .menu-box-title {
+            font-size: 20px;
+            margin: .5rem;
+        }
+
+        .price {
+            color: $orange;
+            font-size: 20px;
+            margin: .5rem;
+
+            span {
+                font-size: 15px;
+                text-decoration: line-through;
+            }
+        }
+
+        .menu-box-btn {
+            border: 2px solid $orange;
+            color: $orange;
+            background: none;
+            padding: .7rem 1rem .7rem 1rem;
+            margin: .5rem;
+        }
+
+        .menu-box-btn:hover {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+}
+
+section#products {
+    background-color: $black;
+    min-height: 90vh;
+
+    .products-title {
+        text-align: center;
+        font-size: 50px;
+        padding: 9rem 0 3rem 0;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .products-box {
+        border: 1px solid rgb(56, 56, 56);
+        text-align: center;
+        background: none;
+        margin: .7rem 0 .7rem 0;
+
+        img {
+            height: 300px;
+        }
+
+        .products-box-title {
+            font-size: 20px;
+            margin: .5rem;
+        }
+
+        .points i {
+            color: $orange;
+        }
+
+        .price {
+            color: white;
+            font-size: 20px;
+            margin: .5rem;
+        }
+
+        .products-box-btn {
+            border: 2px solid $orange;
+            color: $orange;
+            background: none;
+            padding: .7rem 1rem .7rem 1rem;
+            margin: .5rem;
+        }
+
+        .products-box-btn:hover {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+}
+
+section#review {
+    background-color: $black;
+    height: auto;
+
+    .review-title {
+        font-size: 50px;
+        text-align: center;
+        margin: 0 0 2rem 0;
+        padding: 6rem 0 2rem;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .review-box {
+        border: 1px solid rgb(56, 56, 56);
+        text-align: center;
+        background: none;
+        margin: .7rem 0 .7rem 0;
+
+        .review-icon i {
+            color: $orange;
+            font-size: 80px;
+            padding: 1rem;
+        }
+
+        .review-text {
+            padding: 1rem;
+        }
+
+        img {
+            width: 50%;
+            border-radius: 50% 50%;
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+
+section#contact {
+    background-color: $black;
+    min-height: 100vh;
+    padding: 0 0 6rem 0;
+
+    .contact-title {
+        text-align: center;
+        font-size: 50px;
+        margin: 0 0 5rem 0;
+        padding: 6rem 0 0 0;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .contact-form {
+        background-color: $grey;
+        padding: 2rem;
+
+        .contact-subtitle {
+            font-size: 35px;
+        }
+
+        .inputbox {
+            background-color: $grey;
+            border: 1px solid grey;
+            padding: 1rem;
+            margin: 2rem 0 0;
+
+            span {
+                padding-right: 1rem;
+
+                i {
+                    color: $orange;
+                }
+            }
+
+            input {
+                background: none;
+                border: none;
+                width: 85%;
+                text-transform: none;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+        input[type=submit] {
+            border: 2px solid $orange;
+            color: $orange;
+            background: none;
+            padding: .7rem 1rem .7rem 1rem;
+            margin: 2rem 0 0;
+        }
+
+        input[type=submit]:hover {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    background-color: $grey;
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 0;
+
+        span {
+            border: 1px solid white;
+            border-radius: 300px 300px;
+            margin: 0 .5rem 0 .5rem;
+            cursor: pointer;
+
+            i {
+                padding: .5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+
+        li {
+            list-style: none;
+            margin: 3rem .5rem 1rem .5rem;
+            
+            a {
+                text-decoration: none;
+                color: $orange;
+                border: 2px solid $orange;
+                padding: .5rem;
+                width: 10%;
+            }
+        }
+    }
+
+    .author {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+
+        span {
+            color: $orange;
+        }
+    }
+}
+
+
+
+
+
+
+/* Media Qeuries */
+
+@media screen and (max-width: 574px) {
+    html {
+        font-size: 90%;
+    }
+
+    header{
+        .nav-list {
+            position: absolute;
+            top: 8%;
+            left: 0%;
+            flex-direction: column;
+            background-color: $black;
+            width: 100%;
+            padding: .5rem 0 3rem 0;
+            text-align: center;
+            display: none;
+            
+    
+            li {
+                padding: 1rem 0 0;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .about-content{
+        padding: 1.2rem;
+    }
+
+    .menu-title{
+        padding: 7rem 0 0 0;
+    }
+
+    .about-title{
+        padding: 3rem 0 0;
+    }
+
+    .about-btn{
+        width: 40% !important;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+
+    header{
+        .nav-list {
+            position: absolute;
+            top: 8%;
+            left: 0%;
+            flex-direction: column;
+            background-color: $black;
+            width: 100%;
+            padding: .5rem 0 3rem 0;
+            text-align: center;
+            display: none;
+            
+    
+            li {
+                padding: 1rem 0 0;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .about-content{
+        padding: 1.2rem;
+    }
+
+    .menu-title{
+        padding: 7rem 0 0 0;
+    }
+
+    .about-btn{
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 93%;
+    }
+
+    header{
+        .nav-list {
+            position: absolute;
+            top: 8%;
+            left: 0%;
+            flex-direction: column;
+            background-color: $black;
+            width: 100%;
+            padding: .5rem 0 3rem 0;
+            text-align: center;
+            display: none;
+            
+    
+            li {
+                padding: 1rem 0 0;
+            }
+        }
+    }
+
+    .about-content{
+        padding: 1.2rem;
+    }
+
+    .menu-title{
+        padding: 7rem 0 0 0;
+    }
+
+    .about-btn{
+        width: 40% !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .about-btn{
+        width: 30% !important;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .menu-icon{
+        display: none;
+    }
+}
+
+//NAVBAR ICON
+
+.menu-icon{
+    cursor: pointer;
+    width: 30px;
+    margin-left: .5rem;
+}
+
+#bar1,
+#bar2,
+#bar3{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: .4s;
+    margin: 7px 0;
+}
+
+.change #bar1{
+    transform: translate(0, 10px) rotate(42deg);  
+}
+
+.change #bar2{
+    opacity: 0;
+    transform: translate(200px,0);
+}
+
+.change #bar3{
+    transform: translate(0, -11px) rotate(-45deg);
+}
